@@ -1,0 +1,21 @@
+<table>
+ <tr>
+   <td>Name</td>
+   <td>Organization</td>
+   <td>Email</td>
+   <td>Phone Number</td>
+ </tr> 
+ <% @all_staff.each do |staff| %>
+ <tr>
+   <td> <%= staff.name %> </td>
+   <td> <%= staff.organization %></td>
+   <td> <%= staff.email %> </td>
+   <td> <%= staff.phone_number %> </td>
+ </tr>
+ <% end %>
+
+
+
+</table>
+
+
