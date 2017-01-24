@@ -1,0 +1,24 @@
+<h1>Edit Staff </h1>
+
+<%= form_tag "/staffs/#{@staffs.id}", method: :patch do -%>
+ 
+  <div>
+  Name: <input type="text" name="name" value="<%= @staffs.name %>">
+  </div>
+
+  <div>
+  Organization: <input type="text" name="organization" value="<%= @staffs.organization %>">
+  
+  </div>
+  <div>
+    Email: <input type="text" name="email" value="<%= @staffs.email %>">
+  </div>
+
+  <div>
+    Phone Number: <input type="text" name="phone_number" value="<%= @staffs.phone_number %>">
+  </div>
+
+<div>
+  <input type="submit" name="Update Staff">
+</div>
+<% end %>
